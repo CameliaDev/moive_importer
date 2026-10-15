@@ -1,7 +1,9 @@
 [package]
 name = "moive_importer"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+description = "Convert movie list .txt files to JSON (repo name typo: moive → movie)"
+license = "MIT"
 
 [dependencies]
 clap = { version = "4", features = ["derive"] }

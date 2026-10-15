@@ -1,11 +1,9 @@
-mod movie_converter;
-
 use clap::{Parser, Subcommand};
-use movie_converter::convert_txt_to_json;
+use moive_importer::convert_txt_to_json;
 use std::{error::Error, path::PathBuf};
 
 #[derive(Parser)]
-#[command(version, about = "Convert movie lists to JSON")]
+#[command(version, about = "Convert movie lists to JSON (crate name: moive_importer)")]
 struct Cli {
     #[command(subcommand)]
     command: Commands,
